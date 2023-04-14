@@ -61,6 +61,8 @@ export class Age  {
     } else if (planet === 'jupiter')  {
       const jupiterYearsUntil = yearsUntil/11.86;
       return roundNum(jupiterYearsUntil);
+    } else  {
+      return false;
     }
   }
 }
