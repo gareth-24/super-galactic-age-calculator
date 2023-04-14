@@ -35,7 +35,8 @@ export class Age  {
       const jupiterYearsSince = Math.round(exactJupiterYrsSince*100)/100;
       return jupiterYearsSince;
     } else {
-      console.log('error');
+      // console.log('error');
+      return false;
     }
   }
 }
