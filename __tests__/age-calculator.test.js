@@ -23,4 +23,10 @@ describe('Age', () => {
     expect(age.jupiterYears).toEqual(2);
   });
 
+  test('should correctly return the number of "Earth years" passsed since a past birthday', () => {
+    const pastBirthdayAge = 18; //define a variable for the person's 18th bday
+    const yearsSinceBday = age.getYearsPassed(pastBirthdayAge);
+    expect(yearsSinceBday).toEqual(8);
+  });
+
 })

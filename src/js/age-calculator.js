@@ -10,4 +10,8 @@ export class Age  {
     this.jupiterYears = Math.floor(years/11.86);
     // console.log(this);
   }
+
+  getYearsPassed()  {
+    
+  }
 }
