@@ -7,7 +7,6 @@ describe('Age', () => {
   });
 
   test('should correctly create an age object using an input of earth years', () => {
-    // const age = new Age(26);
     expect(age.earthYears).toEqual(26);
   });
 
@@ -102,5 +101,4 @@ describe('getYearsUntil', () => {
     //checks error handling for invalid planet
     expect(age.getYearsUntil(31,'tatooine')).toEqual(false);
   });
-
 });
