@@ -45,10 +45,10 @@ describe('Age', () => {
     expect(venusYearsSinceBday).toEqual(12.9);
   });
 
-  // test('should correctly return the number of "Mars years" passsed since a past birthday', () => {
-  //   const pastBirthdayAge = 18;
-  //   const marsYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'mars'); //specify mars
-  //   expect(marsYearsSinceBday).toEqual(4.26);
-  // });
+  test('should correctly return the number of "Mars years" passsed since a past birthday', () => {
+    const pastBirthdayAge = 18;
+    const marsYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'mars'); //specify mars
+    expect(marsYearsSinceBday).toEqual(4.26);
+  });
 
 })
