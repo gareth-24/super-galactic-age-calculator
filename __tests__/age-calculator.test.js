@@ -29,8 +29,8 @@ describe('Age', () => {
 });
 
 describe('getYearsPassed', () => {
-  let age;  //define variable for the person's age for each test
-  const pastBirthdayAge = 18; //define a variable for the person's 18th bday
+  let age;    //define variable for the person's age for each test
+  const pastBirthdayAge = 18;   //variable for the person's 18th bday
   beforeEach(() => {
     age = new Age(26);  
   });
@@ -66,10 +66,15 @@ describe('getYearsPassed', () => {
   });
 });
 
-describe('getYearsYetToPass', () => {
+describe('getYearsUntil', () => {
   let age;
+  const futureBirthday = 61;    //variable for the future birthday
   beforeEach(() => {
     age = 56;
-  })
-  //WIP break for lunch
+  });
+
+  test('should correctly return the number of earth years until the future birthday', () => {
+    const yearsToFutureBday = age.getYearsUntil(futureBirthday, 'earth');
+    expect(yearsToFutureBday).toEqual(5);
+  });
 });
