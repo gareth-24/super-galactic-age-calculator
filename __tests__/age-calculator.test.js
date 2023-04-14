@@ -25,8 +25,14 @@ describe('Age', () => {
 
   test('should correctly return the number of "Earth years" passsed since a past birthday', () => {
     const pastBirthdayAge = 18; //define a variable for the person's 18th bday
-    const yearsSinceBday = age.getYearsPassed(pastBirthdayAge);
+    const yearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'earth');
     expect(yearsSinceBday).toEqual(8);
   });
+
+  // test('should correctly return the number of "Mercury years" passsed since a past birthday', () => {
+  //   const pastBirthdayAge = 18;
+  //   const yearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'earth');
+  //   expect(yearsSinceBday).toEqual(8);
+  // });
 
 })
