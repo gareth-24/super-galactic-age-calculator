@@ -21,6 +21,10 @@ export class Age  {
       const mercuryYearsSince = Math.round(exactMercuryYearsSince*100)/100; //rounded to 2 dec
       // console.log(mercuryYearsSince);
       return mercuryYearsSince;
+    } else if (planet === 'venus') {
+      let exactVenusYrsSince = yearsSince/.62;
+      const venusYearsSince = Math.round(exactVenusYrsSince*100)/100;
+      return venusYearsSince;
     } else {
       console.log('error');
     }
