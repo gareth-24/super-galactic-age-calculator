@@ -11,8 +11,12 @@ export class Age  {
     // console.log(this);
   }
 
-  getYearsPassed(pastAge)  {
-    const yearsSince = this.earthYears - pastAge;
-    return yearsSince;
+  getYearsPassed(pastAge, planet)  {
+    if (planet === 'earth') {
+      const yearsSince = this.earthYears - pastAge;
+      return yearsSince;
+    } else {
+      console.log('error');
+    }
   }
 }
