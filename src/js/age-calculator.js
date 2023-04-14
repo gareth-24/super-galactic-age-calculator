@@ -12,9 +12,15 @@ export class Age  {
   }
 
   getYearsPassed(pastAge, planet)  {
+    const yearsSince = this.earthYears - pastAge;
     if (planet === 'earth') {
-      const yearsSince = this.earthYears - pastAge;
       return yearsSince;
+    } else if (planet === 'mercury')  {
+      let exactMercuryYearsSince = yearsSince/0.24; //unrounded decimal
+      // console.log(exactMercuryYearsSince);
+      const mercuryYearsSince = Math.round(exactMercuryYearsSince*100)/100; //rounded to 2 dec
+      // console.log(mercuryYearsSince);
+      return mercuryYearsSince;
     } else {
       console.log('error');
     }
