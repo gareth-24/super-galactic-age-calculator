@@ -98,4 +98,9 @@ describe('getYearsUntil', () => {
     expect(jupiterYearsToFutureBday).toEqual(.42);
   });
 
+  test('should correctly return false if the .getYearsUntil method is called with an invalid argument for the type of planet', () => {
+    //checks error handling for invalid planet
+    expect(age.getYearsUntil(31,'tatooine')).toEqual(false);
+  });
+
 });
