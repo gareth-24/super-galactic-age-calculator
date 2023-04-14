@@ -3,14 +3,13 @@
 <head>
   <title>Super Galactic Age Calculator</title>
 </head>
-<body>
-  <h3>Super Galactic Age Calculator</h3>
+<body class="container">
+  <h1>Super Galactic Age Calculator</h1>
   <h6>Enter your age to see how old you are on other planets!</h6>
-  <form id="age-calculator-form">
-    <label for="user-age">Age in Earth-years:</label>
-    <input id="user-age" type="number" required>
-
-    <button type="submit">Submit</button>
+  <form id="age-calculator-form" class="form-floating">
+    <input id="user-age" class="form-control" type="number" required>
+    <label for="user-age">Age in Earth-years:</label><br>
+    <button type="submit" class="btn btn-info">Submit</button>
   </form><br>
   <div id="response" class="hidden">
     <ul>
