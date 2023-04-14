@@ -2,7 +2,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './css/styles.css';
-import AgeCalculator from './js/age-calculator.js';
+// import { Age } from './js/age-calculator.js';
 
 // function handleSubmitForm(event) {
 
