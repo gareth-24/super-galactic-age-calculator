@@ -70,7 +70,7 @@ describe('getYearsUntil', () => {
   let age;
   const futureBirthday = 61;    //variable for the future birthday
   beforeEach(() => {
-    age = 56;
+    age = new Age(56);
   });
 
   test('should correctly return the number of earth years until the future birthday', () => {
