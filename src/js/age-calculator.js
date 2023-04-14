@@ -58,6 +58,9 @@ export class Age  {
     } else if (planet === 'mars')  {
       const marsYearsUntil = yearsUntil/1.88;
       return roundNum(marsYearsUntil);
+    } else if (planet === 'jupiter')  {
+      const jupiterYearsUntil = yearsUntil/11.86;
+      return roundNum(jupiterYearsUntil);
     }
   }
 }
