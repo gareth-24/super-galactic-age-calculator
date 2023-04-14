@@ -5,6 +5,7 @@ export class Age  {
     this.earthYears = years;
     this.mercuryYears = Math.floor(years/.24);
     //round down to nearest whole year because we want age
-    console.log(this.mercuryYears);
+    // console.log(this.mercuryYears);
+    this.venusYears = Math.floor(years/.62);
   }
 }
