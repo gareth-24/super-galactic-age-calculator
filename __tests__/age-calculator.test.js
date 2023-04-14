@@ -93,4 +93,9 @@ describe('getYearsUntil', () => {
     expect(marsYearsToFutureBday).toEqual(2.66);
   });
 
+  test('should correctly return the number of "Jupiter years" until the future birthday', () => {
+    const jupiterYearsToFutureBday = age.getYearsUntil(futureBirthday, 'jupiter');
+    expect(jupiterYearsToFutureBday).toEqual(.42);
+  });
+
 });
