@@ -6,8 +6,8 @@ export class Age  {
     this.mercuryYears = Math.floor(years/.24);
     //round down to nearest whole year because we want age
     // console.log(this.mercuryYears);
-    this.marsYears = Math.floor(years/1.88);
     this.venusYears = Math.floor(years/.62);
+    this.marsYears = Math.floor(years/1.88);
     this.jupiterYears = Math.floor(years/11.86);
     // console.log(this);
   }
@@ -26,7 +26,11 @@ export class Age  {
       let exactVenusYrsSince = yearsSince/.62;
       const venusYearsSince = Math.round(exactVenusYrsSince*100)/100;
       return venusYearsSince;
-    } else {
+    } else if (planet === 'mars') {
+      let exactMarsYrsSince = yearsSince/1.88;
+      const marsYearsSince = Math.round(exactMarsYrsSince*100)/100;
+      return marsYearsSince;
+    }  else {
       console.log('error');
     }
   }
