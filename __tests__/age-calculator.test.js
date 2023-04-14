@@ -13,7 +13,7 @@ describe('Age', () => {
 
   test('should correctly return their age in Mercury years and store it in a new property', () => {
     expect(age.mercuryYears).toEqual(108);
-  })
+  });
 
   test('should correctly return their age in Venus years and store it in a new property', () => {
     expect(age.venusYears).toEqual(41);
@@ -21,7 +21,7 @@ describe('Age', () => {
 
   test('should correctly return their age in Mars years and store it in a new property', () => {
     expect(age.marsYears).toEqual(13);
-  })
+  });
 
   test('should correctly return their age in Jupiter years and store it in a new property', () => {
     expect(age.jupiterYears).toEqual(2);
@@ -49,6 +49,12 @@ describe('Age', () => {
     const pastBirthdayAge = 18;
     const marsYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'mars'); //specify mars
     expect(marsYearsSinceBday).toEqual(4.26);
+  });
+
+  test('should correctly return the number of "Jupiter years" passsed since a past birthday', () => {
+    const pastBirthdayAge = 18;
+    const jupiterYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'jupiter'); //specify jupiter
+    expect(jupiterYearsSinceBday).toEqual(.67);
   });
 
 })
