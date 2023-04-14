@@ -65,3 +65,11 @@ describe('getYearsPassed', () => {
     expect(age.getYearsPassed(18, 'nebula')).toEqual(false);
   });
 });
+
+describe('getYearsYetToPass', () => {
+  let age;
+  beforeEach(() => {
+    age = 56;
+  })
+  //WIP break for lunch
+});
