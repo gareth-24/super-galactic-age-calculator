@@ -55,6 +55,9 @@ export class Age  {
     } else if (planet === 'venus')  {
       const venusYearsUntil = yearsUntil/.62;
       return roundNum(venusYearsUntil);
+    } else if (planet === 'mars')  {
+      const marsYearsUntil = yearsUntil/1.88;
+      return roundNum(marsYearsUntil);
     }
   }
 }
