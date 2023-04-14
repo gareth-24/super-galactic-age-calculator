@@ -19,4 +19,8 @@ describe('Age', () => {
     expect(age.venusYears).toEqual(41);
   });
 
+  test('should correctly return their age in Jupiter years and store it in a new property', () => {
+    expect(age.jupiterYears).toEqual(2);
+  });
+
 })
