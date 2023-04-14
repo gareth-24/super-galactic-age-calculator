@@ -30,7 +30,11 @@ export class Age  {
       let exactMarsYrsSince = yearsSince/1.88;
       const marsYearsSince = Math.round(exactMarsYrsSince*100)/100;
       return marsYearsSince;
-    }  else {
+    } else if (planet === 'jupiter') {
+      let exactJupiterYrsSince = yearsSince/11.86;
+      const jupiterYearsSince = Math.round(exactJupiterYrsSince*100)/100;
+      return jupiterYearsSince;
+    } else {
       console.log('error');
     }
   }
