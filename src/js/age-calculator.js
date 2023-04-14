@@ -42,7 +42,7 @@ export class Age  {
 
   getYearsUntil(futureAge, planet) {
     const yearsUntil = futureAge - this.earthYears;
-    
+
     const roundNum = (exactNumber) =>  {
       return Math.round(exactNumber*100)/100;
     };
@@ -50,8 +50,11 @@ export class Age  {
     if (planet === 'earth') {
       return yearsUntil;
     } else if (planet === 'mercury')  {
-      const mercuryYearsUntil = yearsUntil/0.24;
+      const mercuryYearsUntil = yearsUntil/.24;
       return roundNum(mercuryYearsUntil);
+    } else if (planet === 'venus')  {
+      const venusYearsUntil = yearsUntil/.62;
+      return roundNum(venusYearsUntil);
     }
   }
 }
