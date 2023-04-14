@@ -11,7 +11,8 @@ export class Age  {
     // console.log(this);
   }
 
-  getYearsPassed()  {
-    
+  getYearsPassed(pastAge)  {
+    const yearsSince = this.earthYears - pastAge;
+    return yearsSince;
   }
 }
