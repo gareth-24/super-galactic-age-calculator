@@ -57,4 +57,9 @@ describe('Age', () => {
     expect(jupiterYearsSinceBday).toEqual(.67);
   });
 
+  test('should correctly return false if the .getYearsPassed method is called with an invalid argument for the type of planet', () => {
+    //checks that this method handles errors for a planet that is not defined in our logic
+    expect(age.getYearsPassed(18, 'nebula')).toEqual(false);
+  });
+
 })
