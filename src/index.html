@@ -6,11 +6,18 @@
 <body>
   <h3>Enter your age to see how old you are on other planets!</h3>
   <form id="age-calculator-form">
-    <label for="age">Age in Earth-years:</label>
-    <input id="age" type="number" required>
+    <label for="user-age">Age in Earth-years:</label>
+    <input id="user-age" type="number" required>
 
     <button type="submit">Submit</button>
   </form><br>
-  <div id="response"></div>
+  <div id="response" class="hidden">
+    <ul>
+      <li>Mercury age: <span id="mercury-output"></span></li>
+      <li>Venus age: <span id="venus-output"></span></li>
+      <li>Mars age: <span id="mars-output"></span></li>
+      <li>Jupiter age: <span id="jupiter-output"></span></li>
+    </ul>
+  </div>
 </body>
 </html>
