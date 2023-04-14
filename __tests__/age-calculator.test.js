@@ -1,9 +1,18 @@
 import { Age } from './../src/js/age-calculator.js';
 
 describe('Age', () => {
-  
+  let age;
+  beforeEach(() => {
+    age = new Age(26);
+  });
+
   test('should correctly create an age object using an input of earth years', () => {
-    const age = new Age(26);
+    // const age = new Age(26);
     expect(age.earthYears).toEqual(26);
   });
+
+  test('should correctly return their age in Mercury years and store it in a new property', () => {
+    expect(age.mercuryYears).toEqual(108);
+  })
+
 })
