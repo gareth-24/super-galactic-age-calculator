@@ -68,13 +68,19 @@ describe('getYearsPassed', () => {
 
 describe('getYearsUntil', () => {
   let age;
-  const futureBirthday = 61;    //variable for the future birthday
+  const futureBirthday = 31;    //variable for the future birthday
   beforeEach(() => {
-    age = new Age(56);
+    age = new Age(26);
   });
 
   test('should correctly return the number of earth years until the future birthday', () => {
     const yearsToFutureBday = age.getYearsUntil(futureBirthday, 'earth');
     expect(yearsToFutureBday).toEqual(5);
   });
+
+  test('should correctly return the number of "Mercury years" until the future birthday', () => {
+    const mercuryYearsToFutureBday = age.getYearsUntil(futureBirthday, 'mercury');
+    expect(mercuryYearsToFutureBday).toEqual(20.83);
+  });
+
 });
