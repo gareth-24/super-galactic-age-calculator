@@ -29,10 +29,10 @@ describe('Age', () => {
     expect(yearsSinceBday).toEqual(8);
   });
 
-  // test('should correctly return the number of "Mercury years" passsed since a past birthday', () => {
-  //   const pastBirthdayAge = 18;
-  //   const yearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'earth');
-  //   expect(yearsSinceBday).toEqual(8);
-  // });
+  test('should correctly return the number of "Mercury years" passsed since a past birthday', () => {
+    const pastBirthdayAge = 18;
+    const mercuryYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'mercury'); //specify mercury as the type of years we want to check
+    expect(mercuryYearsSinceBday).toEqual(33.33);
+  });
 
 })
