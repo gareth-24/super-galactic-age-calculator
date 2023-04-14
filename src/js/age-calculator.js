@@ -39,4 +39,11 @@ export class Age  {
       return false;
     }
   }
+
+  getYearsUntil(futureAge, planet) {
+    const yearsUntil = futureAge - this.earthYears;
+    if (planet === 'earth') {
+      return yearsUntil;
+    }
+  }
 }
