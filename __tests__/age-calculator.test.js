@@ -88,4 +88,9 @@ describe('getYearsUntil', () => {
     expect(venusYearsToFutureBday).toEqual(8.06);
   });
 
+  test('should correctly return the number of "Mars years" until the future birthday', () => {
+    const marsYearsToFutureBday = age.getYearsUntil(futureBirthday, 'mars');
+    expect(marsYearsToFutureBday).toEqual(2.66);
+  });
+
 });
