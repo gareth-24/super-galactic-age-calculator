@@ -35,4 +35,10 @@ describe('Age', () => {
     expect(mercuryYearsSinceBday).toEqual(33.33);
   });
 
+  test('should correctly return the number of "Venus years" passsed since a past birthday', () => {
+    const pastBirthdayAge = 18;
+    const venusYearsSinceBday = age.getYearsPassed(pastBirthdayAge, 'venus'); //specify venus
+    expect(venusYearsSinceBday).toEqual(12.9);
+  });
+
 })
