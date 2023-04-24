@@ -7,6 +7,7 @@ import { Age } from './js/age-calculator.js';
 
 function ageCalculator(years)  {
   const newAge = new Age(years);
+  newAge.getPlanetaryAge();
   const mercuryAge = newAge.mercuryYears;
   const venusAge = newAge.venusYears;
   const marsAge = newAge.marsYears;
