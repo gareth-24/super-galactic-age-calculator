@@ -13,6 +13,10 @@ export class Age  {
     // this.jupiterYears = Math.floor(years/11.86);
   }
 
+  getPlanataryAge() {
+
+  }
+
   getYearsPassed(pastAge, planet)  {
     const yearsSince = this.earthYears - pastAge;
 

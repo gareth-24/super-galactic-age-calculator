@@ -43,6 +43,18 @@ describe('Age', () => {
   // });
 });
 
+describe('getPlanataryAge', () => {
+  let age;
+  beforeEach(() => {
+    age = new Age(26);
+  });
+
+  test('should correctly calculate and update their age in Mercury-years property', () => {
+    age.getPlanataryAge();
+    expect(age.mercuryYears).toEqual(108);
+  })
+})
+
 describe('getYearsPassed', () => {
   let age;    //define variable for the person's age for each test
   const pastBirthdayAge = 18;   //variable for the person's 18th bday
