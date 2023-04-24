@@ -18,6 +18,7 @@ export class Age  {
     this.mercuryYears = Math.floor(this.earthYears/.24);
     this.venusYears = Math.floor(this.earthYears/.62);
     this.marsYears = Math.floor(this.earthYears/1.88);
+    this.jupiterYears = Math.floor(this.earthYears/11.86);
   }
 
   getYearsPassed(pastAge, planet)  {
