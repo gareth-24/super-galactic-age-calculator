@@ -32,6 +32,9 @@ $ npm run start     <!--build the project and serve it with a web server-->
 ```
 * _Alternatively, after installation and bundling, you can run the application by opening ./dist/index.html in the browser if you do not need the live server._
 * _All source files are located in the ./src/ folder_
+* _The test file is located in the ./__tests__/ folder. All tests are currently passing and the coverage is 100%._
+* _To run tests, use the terminal command ```npm run test```_
+* _You can also see a more detailed summary of the test coverage by opening ./coverage/lcov-report/index.html in the browser._
 
 ## Known Bugs
 
