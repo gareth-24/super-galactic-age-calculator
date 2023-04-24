@@ -25,22 +25,6 @@ describe('Age', () => {
   test('should correctly return the initial property of age in Jupiter-years as 0', ()  =>  {
     expect(age.jupiterYears).toEqual(0);
   })
-
-  // test('should correctly return their age in Mercury-years and store it in a new property', () => {
-  //   expect(age.mercuryYears).toEqual(108);
-  // });
-
-  // test('should correctly return their age in Venus-years and store it in a new property', () => {
-  //   expect(age.venusYears).toEqual(41);
-  // });
-
-  // test('should correctly return their age in Mars-years and store it in a new property', () => {
-  //   expect(age.marsYears).toEqual(13);
-  // });
-
-  // test('should correctly return their age in Jupiter-years and store it in a new property', () => {
-  //   expect(age.jupiterYears).toEqual(2);
-  // });
 });
 
 describe('getPlanataryAge', () => {
@@ -65,7 +49,7 @@ describe('getPlanataryAge', () => {
   test('should correctly calculate and update their age in Jupiter-years property', () => {
     expect(age.jupiterYears).toEqual(2);
   });
-})
+});
 
 describe('getYearsPassed', () => {
   let age;    //define variable for the person's age for each test

@@ -7,10 +7,6 @@ export class Age  {
     this.venusYears = 0;
     this.marsYears = 0;
     this.jupiterYears = 0;
-    // this.mercuryYears = Math.floor(years/.24);
-    // this.venusYears = Math.floor(years/.62);
-    // this.marsYears = Math.floor(years/1.88);
-    // this.jupiterYears = Math.floor(years/11.86);
   }
 
   getPlanataryAge() {
