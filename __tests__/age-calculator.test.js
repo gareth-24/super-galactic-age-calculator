@@ -61,6 +61,10 @@ describe('getPlanataryAge', () => {
   test('should correctly calculate and update their age in Mars-years property', () => {
     expect(age.marsYears).toEqual(13);
   });
+
+  test('should correctly calculate and update their age in Jupiter-years property', () => {
+    expect(age.jupiterYears).toEqual(2);
+  });
 })
 
 describe('getYearsPassed', () => {
