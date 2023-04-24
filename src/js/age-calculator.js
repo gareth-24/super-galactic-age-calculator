@@ -14,7 +14,9 @@ export class Age  {
   }
 
   getPlanataryAge() {
+    //round down because we are calculating an age
     this.mercuryYears = Math.floor(this.earthYears/.24);
+    this.venusYears = Math.floor(this.earthYears/.62);
   }
 
   getYearsPassed(pastAge, planet)  {
