@@ -47,12 +47,16 @@ describe('getPlanataryAge', () => {
   let age;
   beforeEach(() => {
     age = new Age(26);
+    age.getPlanataryAge();
   });
 
   test('should correctly calculate and update their age in Mercury-years property', () => {
-    age.getPlanataryAge();
     expect(age.mercuryYears).toEqual(108);
-  })
+  });
+
+  test('should correctly calculate and update their age in Venus-years property', () => {
+    expect(age.venusYears).toEqual(41);
+  });
 })
 
 describe('getYearsPassed', () => {
