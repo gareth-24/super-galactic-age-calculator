@@ -27,11 +27,11 @@ describe('Age', () => {
   })
 });
 
-describe('getPlanataryAge', () => {
+describe('getPlanetaryAge', () => {
   let age;
   beforeEach(() => {
     age = new Age(26);
-    age.getPlanataryAge();
+    age.getPlanetaryAge();
   });
 
   test('should correctly calculate and update their age in Mercury-years property', () => {
