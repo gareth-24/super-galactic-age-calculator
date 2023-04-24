@@ -3,11 +3,14 @@
 export class Age  {
   constructor(years) {
     this.earthYears = years;
-    //round down to nearest whole year because we want an age
-    this.mercuryYears = Math.floor(years/.24);
-    this.venusYears = Math.floor(years/.62);
-    this.marsYears = Math.floor(years/1.88);
-    this.jupiterYears = Math.floor(years/11.86);
+    this.mercuryYears = 0;
+    this.venusYears = 0;
+    this.marsYears = 0;
+    this.jupiterYears = 0;
+    // this.mercuryYears = Math.floor(years/.24);
+    // this.venusYears = Math.floor(years/.62);
+    // this.marsYears = Math.floor(years/1.88);
+    // this.jupiterYears = Math.floor(years/11.86);
   }
 
   getYearsPassed(pastAge, planet)  {
